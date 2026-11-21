@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leonida Ledger — GTA VI Trophy Audit & Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="ledger" class="shell">
+
+  <header class="masthead">
+    <div class="mast-left">
+      <div class="eyebrow">OFFLINE AUDIT · PLAYSTATION 5 · 55 ENTRIES</div>
+      <h1>LEONIDA LEDGER <span class="h1-sub">/ GTA VI TROPHY AUDIT</span></h1>
+      <div class="mast-note">Citation-first guide &amp; tracker · names, descriptions and grades as published · every step carries a source</div>
+    </div>
+    <div class="mast-right">
+      <div class="progress-block"><span id="header-progress" class="progress-num">0/55</span><span class="progress-cap">EARNED</span></div>
+      <div id="grade-counts" class="grade-counts">1P · 2G · 6S · 46B</div>
+      <div class="mast-actions">
+        <button id="spoiler-toggle" class="btn" type="button" title="Hide story names until earned">◈ SPOILER SHIELD: OFF</button>
+        <button id="export-btn" class="btn" type="button">EXPORT</button>
+        <button id="import-btn" class="btn" type="button">IMPORT</button>
+        <input id="import-file" type="file" accept="application/json,.json" hidden>
+      </div>
+      <div class="save-note">◉ SAVED IN THIS BROWSER · localStorage</div>
+    </div>
+  </header>
+
+  <section id="audit-strip" class="audit-strip" aria-label="Audit strip"></section>
+
+  <nav class="tabbar" aria-label="Guide sections">
+    <button class="tab active" data-view="tracker" type="button">TRACKER <span class="tab-mini">55</span></button>
+    <button class="tab" data-view="roadmap" type="button">ROADMAP <span class="tab-mini">5 STAGES</span></button>
+    <button class="tab" data-view="missables" type="button">MISSABLES <span class="tab-mini">9</span></button>
+    <button class="tab" data-view="sources" type="button">SOURCES <span class="tab-mini">19</span></button>
+    <div class="tab-tail">READ 20 NOV 2026 · NO RUNTIME NETWORK · CITES ARE ANCHORS</div>
+  </nav>
+
+  <div class="workspace">
+    <aside id="left-rail" class="rail rail-left" aria-label="Filters"></aside>
+
+    <main id="center-pane" class="pane pane-center" aria-label="Trophy checklist and guide sections"></main>
+
+    <aside id="detail-pane" class="pane pane-detail" aria-label="Trophy detail"></aside>
+
+    <aside id="right-rail" class="rail rail-right" aria-label="Roadmap order"></aside>
+  </div>
+
+  <footer class="footer">
+    <span>LEONIDA LEDGER / v4 · BUILT FROM THE OFFICIAL 55 · 19 SITES · 20 NOV 2026</span>
+    <span>ANCHORS ONLY · THE APP FETCHES NOTHING FROM THE NETWORK</span>
+  </footer>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
